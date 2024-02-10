@@ -4,27 +4,32 @@ import "./globals.css";
 import Notification from "@/components/Notification";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AuthProvider from "@/components/AuthProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pizza Pizza!",
-  description: "Pizza ordering app",
+	title: "Viva Gusto",
+	description: "Food ordering app",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
-      <Notification />
-      <Navbar />
-      {children}
-      <Footer />
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body className={inter.className}>
+				<AuthProvider>
+					<div>
+						<Notification />
+						<Navbar />
+						{children}
+						<Footer />
+					</div>
+				</AuthProvider>
+			</body>
+		</html>
+	);
 }
