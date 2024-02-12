@@ -9,7 +9,6 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
-<<<<<<< HEAD
 
 model Account {
   id                String  @id @default(cuid())
@@ -92,5 +91,3 @@ model Order {
   user      User     @relation(fields: [userEmail], references: [email])
   userEmail String
 }
-=======
->>>>>>> 910c85ea2fed2867da42ca4aff2633ee455f8ec1

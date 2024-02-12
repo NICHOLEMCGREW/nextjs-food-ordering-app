@@ -9,16 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@auth/prisma-adapter": "^1.3.3",
     "@prisma/client": "^5.9.1",
     "next": "14.1.0",
     "next-auth": "^4.24.5",
-=======
-    "@prisma/client": "^5.9.1",
-    "next": "14.1.0",
-    "prisma": "^5.9.1",
->>>>>>> 910c85ea2fed2867da42ca4aff2633ee455f8ec1
     "react": "^18",
     "react-countdown": "^2.3.5",
     "react-dom": "^18"

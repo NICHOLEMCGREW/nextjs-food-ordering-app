@@ -9,7 +9,6 @@ const getData = async ()=>{
 
   if(!res.ok){
     throw new Error("Failed!");
-    
   }
 
   return res.json()
